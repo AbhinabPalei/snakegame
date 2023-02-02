@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgb(115, 185, 217),rgb(233, 158, 171));
+}
+
+
+.snake-board {
+    
+    
+    display: grid;
+    width: 95vmin;
+    height: 92vmin;
+    border: 3px solid #e51f7f;
+    background:linear-gradient(rgb(244, 220, 115),rgb(166, 247, 167))  ;
+    margin: 4px 0 12px 0;
+    grid-template-rows: repeat(28, 1fr);
+    grid-template-columns: repeat(28, 1fr);
+}
+
+.keycontrol {
+    width: 95vw;
+    height: 30vh;
+    position: relative;
+
+}
+
+.btn {
+    position: absolute;
+    width: 18vw;
+    background-color: #0f100f;
+    color: #1fb9e5;
+    height: 8vh;
+    border: 2px solid #1fb9e5;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 19px;
+
+}
+
+#UP {
+    top: 1vh;
+    left: 38vw;
+}
+
+#DOWN {
+    bottom: 3vh;
+    left: 38vw;
+
+}
+#RIGHT{
+    top: 8vh;
+    right: 10vw;
+}
+ #LEFT {
+    top: 8vh;
+    left: 8vw;
+
+ }
+ .head {
+    background-color:#250380;
+    border: 2px solid black;
+    
+ }
+
+ .snake {
+    background-color: #ff6700;
+    border: 2px solid #b14c08;
+
+ }
+
+ .food {
+    background-color: #f10404;
+    border: 1px solid #9b3d3d;
+ }
+
+ #scoreBox {
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(19, 12, 14);
+    border: 2px black;
+    border-radius: 12px;
+    font-weight: 300;
+    background-color: aliceblue;
+ }
+
+ 
